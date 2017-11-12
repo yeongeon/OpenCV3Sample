@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		903471A5F10D9F613B1FC170 /* libPods-OpenCV3Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B820F0A606438B51652E258 /* libPods-OpenCV3Sample.a */; };
 		A5CBD1B31FB6045000E75E0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBD1B21FB6045000E75E0F /* AppDelegate.swift */; };
 		A5CBD1B51FB6045000E75E0F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBD1B41FB6045000E75E0F /* ViewController.swift */; };
 		A5CBD1B81FB6045000E75E0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CBD1B61FB6045000E75E0F /* Main.storyboard */; };
 		A5CBD1BA1FB6045000E75E0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CBD1B91FB6045000E75E0F /* Assets.xcassets */; };
 		A5CBD1BD1FB6045000E75E0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CBD1BB1FB6045000E75E0F /* LaunchScreen.storyboard */; };
 		A5CBD1C81FB6045000E75E0F /* OpenCV3SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CBD1C71FB6045000E75E0F /* OpenCV3SampleTests.swift */; };
+		A5CBD1E01FB89D4A00E75E0F /* CVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A5CBD1DF1FB89D4A00E75E0F /* CVWrapper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		53FD70357F34591B8965381E /* Pods-OpenCV3Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV3Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV3Sample/Pods-OpenCV3Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		8B820F0A606438B51652E258 /* libPods-OpenCV3Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OpenCV3Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BD5745D34CA8B7DCBFE94BD /* Pods-OpenCV3Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenCV3Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenCV3Sample/Pods-OpenCV3Sample.release.xcconfig"; sourceTree = "<group>"; };
 		A5CBD1AF1FB6045000E75E0F /* OpenCV3Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCV3Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBD1B21FB6045000E75E0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5CBD1B41FB6045000E75E0F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		A5CBD1C31FB6045000E75E0F /* OpenCV3SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenCV3SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CBD1C71FB6045000E75E0F /* OpenCV3SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenCV3SampleTests.swift; sourceTree = "<group>"; };
 		A5CBD1C91FB6045000E75E0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CBD1DE1FB89D4900E75E0F /* OpenCV3Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCV3Sample-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5CBD1DF1FB89D4A00E75E0F /* CVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CVWrapper.mm; sourceTree = "<group>"; };
+		A5CBD1E11FB89D6000E75E0F /* CVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CVWrapper.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903471A5F10D9F613B1FC170 /* libPods-OpenCV3Sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A3AFC1B2504951F61B2EC08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B820F0A606438B51652E258 /* libPods-OpenCV3Sample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A5CBD1A61FB6045000E75E0F = {
 			isa = PBXGroup;
 			children = (
+				A5CBD1D21FB60A7A00E75E0F /* Wrappers */,
 				A5CBD1B11FB6045000E75E0F /* OpenCV3Sample */,
 				A5CBD1C61FB6045000E75E0F /* OpenCV3SampleTests */,
 				A5CBD1B01FB6045000E75E0F /* Products */,
+				B3BF5BEA132638F7AA0880C6 /* Pods */,
+				9A3AFC1B2504951F61B2EC08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +116,25 @@
 			path = OpenCV3SampleTests;
 			sourceTree = "<group>";
 		};
+		A5CBD1D21FB60A7A00E75E0F /* Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				A5CBD1E11FB89D6000E75E0F /* CVWrapper.h */,
+				A5CBD1DF1FB89D4A00E75E0F /* CVWrapper.mm */,
+				A5CBD1DE1FB89D4900E75E0F /* OpenCV3Sample-Bridging-Header.h */,
+			);
+			path = Wrappers;
+			sourceTree = "<group>";
+		};
+		B3BF5BEA132638F7AA0880C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53FD70357F34591B8965381E /* Pods-OpenCV3Sample.debug.xcconfig */,
+				8BD5745D34CA8B7DCBFE94BD /* Pods-OpenCV3Sample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A5CBD1CC1FB6045000E75E0F /* Build configuration list for PBXNativeTarget "OpenCV3Sample" */;
 			buildPhases = (
+				B45FE8FA9E735D7C91ED9617 /* [CP] Check Pods Manifest.lock */,
 				A5CBD1AB1FB6045000E75E0F /* Sources */,
 				A5CBD1AC1FB6045000E75E0F /* Frameworks */,
 				A5CBD1AD1FB6045000E75E0F /* Resources */,
+				77E65E30E1253BFA37F52096 /* [CP] Embed Pods Frameworks */,
+				D443A79BC0FB75FBA270C951 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,6 +188,7 @@
 				TargetAttributes = {
 					A5CBD1AE1FB6045000E75E0F = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					A5CBD1C21FB6045000E75E0F = {
@@ -194,12 +237,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77E65E30E1253BFA37F52096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV3Sample/Pods-OpenCV3Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B45FE8FA9E735D7C91ED9617 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenCV3Sample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D443A79BC0FB75FBA270C951 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenCV3Sample/Pods-OpenCV3Sample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A5CBD1AB1FB6045000E75E0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A5CBD1B51FB6045000E75E0F /* ViewController.swift in Sources */,
+				A5CBD1E01FB89D4A00E75E0F /* CVWrapper.mm in Sources */,
 				A5CBD1B31FB6045000E75E0F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,13 +446,18 @@
 		};
 		A5CBD1CD1FB6045000E75E0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53FD70357F34591B8965381E /* Pods-OpenCV3Sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OpenCV3Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mulberry.sample.opencv3.OpenCV3Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wrappers/OpenCV3Sample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,13 +465,17 @@
 		};
 		A5CBD1CE1FB6045000E75E0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD5745D34CA8B7DCBFE94BD /* Pods-OpenCV3Sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OpenCV3Sample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.mulberry.sample.opencv3.OpenCV3Sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Wrappers/OpenCV3Sample-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
