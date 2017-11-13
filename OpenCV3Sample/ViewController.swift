@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         
         let t = OpenCVWrapper()
         let v:String = t.openCVVersionString()
-        let i:Int = 0
+        log.debug("+++++ v: \(v)")
     }
 
     override func didReceiveMemoryWarning() {
